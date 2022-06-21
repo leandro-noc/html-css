@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body {
+    font: normal 1em Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #027368, #01403A);
+    background-attachment: fixed;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 15px #012626;
+}
+
+h1 {
+    color: #01403ad3;
+    margin: auto;
+}
+
+h2 { 
+    color: #01403A;
+}
+
+a {
+    font-weight: bold;
+    color: #038C7F;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #01403A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#principal {
+    text-align: center;
+    background-color: #01554c;
+    color: white;
+}
+
+.topico {
+    text-shadow: #012626;
+}
+
+a::after {
+    content: '[link]';
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgray;
+}
+
+

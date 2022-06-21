@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, darkgray, rgb(73, 73, 73));
+            background-attachment: fixed;
+        }
+
+        header { 
+            background-color: white;
+            font-weight: bold;
+            padding: 5px; 
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: rgb(85, 85, 85);
+            padding: 3px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.432);
+        }
+
+        nav > a { /* todo link dentro do nav será editado*/
+            margin-right: 50px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav > a:hover { /*Ao passar o mouse pelo link */
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 7px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.445);
+        }
+
+        article  {
+            background-color: rgb(187, 186, 186);
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(141, 140, 140);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Economia Política Tecnologia</p>
+        </section>
+        
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, blanditiis vero doloribus facere beatae delectus quidem aspernatur tenetur molestiae error nesciunt magni amet fugit libero similique quasi quo pariatur adipisci.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Mudanças no mundo da tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur quas ipsum cum illum fuga, nemo temporibus quidem nostrum nisi placeat aliquam perferendis tempora omnis magnam. Dolorem sed excepturi quaerat?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ducimus, minima vitae a atque itaque quaerat sit eos eveniet unde fugiat, sequi officia porro autem libero commodi repellendus, molestiae molestias.</p>
+                <aside>
+                    <p>Artigo escrito por Bartolomeo Ryden</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>
