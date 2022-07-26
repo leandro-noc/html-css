@@ -11,62 +11,84 @@
         }
 
         table {
+            width: 400px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgb(214, 214, 214);
+        }
+
+        thead, tfoot {
+            background-color: rgb(66, 66, 66);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(66, 66, 66);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td,th {
-            width: 150px;
             border: 1px solid black;
             padding: 10px;
         }
 
-        thead, tfoot {
-            background-color: rgb(75, 75, 75);
-            color: white;
+        .num {
+            text-align: right;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>5 maiores populações das Unidades Federativas</caption>
+
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
         </thead>
 
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>46 649 132</td>
+                <td class="num">46 649 132</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 411 923</td>
+                <td class="num">21 411 923</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 463 349</td>
+                <td class="num">17 463 349</td>
             </tr>
-
             <tr>
                 <td>Bahia</td>
-                <td>14 985 284	</td>
+                <td class="num">14 985 284	</td>
             </tr>
-
             <tr>
                 <td>Paraná</td>
-                <td>11 597 484</td>
+                <td class="num">11 597 484</td>
             </tr>
-
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>112 100 746</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>112 100 746</strong></td>
             </tr>
         </tfoot>
     </table>
-
 </body>
 </html>
